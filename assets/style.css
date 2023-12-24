@@ -1,0 +1,42 @@
+/* Copied from Module 1 Css */
+* {
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+/* Color Pallete -  #fca17d, #f9dbbd, #da627d */
+.header {
+    background-color: #da627d;
+
+}
+.header h1 {
+    font-size: 47px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white
+   
+}
+.header nav {
+  font-size: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: end;
+  text-align: center;
+
+
+   
+}
+.header nav ul {
+    list-style-type: none;
+    
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin: 20px
+    
+}
+
+a {
+    text-decoration: none ;
+    color: #f9dbbd
+}

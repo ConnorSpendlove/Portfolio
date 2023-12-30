@@ -5,38 +5,104 @@
     margin: 0;
 }
 /* Color Pallete -  #fca17d, #f9dbbd, #da627d */
+body{
+    background-color: #f9dbbd;
+}
 .header {
+    padding: 10px;
     background-color: #da627d;
-
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
 }
 .header h1 {
-    font-size: 47px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: white
-   
+    display: flex;
+    font-size: 75px;
 }
 .header nav {
   font-size: 30px;
   padding: 20px;
   display: flex;
   justify-content: end;
-  text-align: center;
 
 
    
 }
-.header nav ul {
+.header ul {
     list-style-type: none;
+    display: flex;
     
 }
 
-.header nav ul li {
+.header li {
     display: inline-block;
-    margin: 20px
+    margin: 15px
     
+}
+.header a:hover {
+color: aliceblue;
 }
 
 a {
-    text-decoration: none ;
-    color: #f9dbbd
+    text-decoration:none;
+    color: #f9dbbd;
 }
+
+.Subheader {
+    background-color: #fca17d;
+    padding: 20px;
+
+}
+
+.Subheader h2 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 1px 2px black;
+    
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: black;
+ 
+}
+
+.About-Me h2 {
+font-size: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Citations
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow
+
+
+*/

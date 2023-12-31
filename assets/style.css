@@ -9,27 +9,36 @@ body{
     background-color: #f9dbbd;
 }
 .header {
-    padding: 10px;
+    padding: 35px;
     background-color: #da627d;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: white;
-}
-.header h1 {
     display: flex;
-    font-size: 75px;
+    justify-content: space-between;
 }
+.About-Me img {
+   max-height: 200px;
+   border: 5px  solid #da627d;
+   padding: 5px;
+   background-color: #fca17d;
+   border-radius: 30px;
+
+}
+
+.header h1 {
+font-size: 70px;
+color: #fff;
+
+}
+
 .header nav {
-  font-size: 30px;
-  padding: 20px;
+  font-size: 31px;
   display: flex;
   justify-content: end;
-
-
-   
+  align-items: end;
 }
+
 .header ul {
     list-style-type: none;
-    display: flex;
     
 }
 
@@ -39,7 +48,7 @@ body{
     
 }
 .header a:hover {
-color: aliceblue;
+color: white;
 }
 
 a {
@@ -49,32 +58,47 @@ a {
 
 .Subheader {
     background-color: #fca17d;
-    padding: 20px;
-
+    padding: 25px;
 }
 
 .Subheader h2 {
-    font-size: 40px;
+    font-size: 38px;
     display: flex;
     justify-content: center;
     color: #fff;
     text-shadow: 1px 2px black;
-    
 }
-
 
 .content {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     color: black;
- 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
-
+.About-Me {
+    margin: 10px;
+}
 .About-Me h2 {
-font-size: 50px;
+    font-size: 50px;
+    color: #38230f;
 }
 
+.Projects h2 {
+    font-size: 50px;
+    color: #38230f;
+}
+
+.GitHub h2 {
+    font-size: 50px;
+    color: #38230f;
+ }
+
+ .Contact-Me h2 {
+    font-size: 50px;
+    color: #38230f;
+ }
+    
 
 
 

@@ -17,7 +17,7 @@ body{
 }
 
 .header h1 {
-font-size: 70px;
+font-size: 90px;
 color: #fff;
 
 }
@@ -41,6 +41,7 @@ color: #fff;
 }
 .header a:hover {
 color: white;
+transition: ease-in-out 0.2s;
 }
 
 header a {
@@ -49,13 +50,13 @@ header a {
 }
 .Subheader {
     background-color: #fca17d;
-    padding: 25px;
+    padding: 5px;
 
 }
 
 .Subheader h2 {
-    margin-left: 15px;
-    font-size: 38px;
+    margin-left: 10px;
+    font-size: 47px;
     display: flex;
     justify-content: start;
     color: #fff;
@@ -70,11 +71,11 @@ header a {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 .About-Me {
-    margin-top: 40px;
+    margin-top: 35px;
     margin-left: 10px;
 }
 
-.About-Me hr{
+/* .About-Me hr{
     margin: 4px;
     border-width: 0;
     background-color:#fca17d;
@@ -84,39 +85,51 @@ header a {
     flex-wrap: wrap;
     width: 1000px;
     border-radius: 10px;
-}
+} */
 
 .About-Me h3 {
-    font-size: 60px;
+    font-size: 50px;
     color: #38230f;
     text-decoration: underline;
+    margin-bottom: 20px;
 }
 
 .About-Me div {
     display: flex;
     justify-content: space-between;
 
+
 }
 .About-Me p{
-    display: flex;
     flex-wrap: wrap;
     font-size: 39px;
     color: black;
+    line-height: 1.3;
+    text-indent: 50px;
 }
-
+.About-Me a {
+color: #da627d;
+}
+.About-Me a:hover{
+    color: #fca17d;
+    transition: ease-in-out 0.3s;
+}
 .About-Me img {
-    max-height: 500px;
+    
+    max-height: 650px;
     border: 5px  solid #fca17d;
     padding: 5px;
-    margin-right: 10px;
+    margin-right: 50px;
     background-color: #f9dbbd;
-    border-radius: 30px;
-    width: fit-content;
+    border-radius: 1000px;
  
  } 
 
 .Projects {
     background-color: #38230f;
+    color: #fff;
+    margin-top: 80px;
+
 }
 .Projects h3 {
     font-size: 80px;
@@ -124,6 +137,33 @@ header a {
     display: flex;
     justify-content: center;
 }
+.Projects ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    font-size: 40px;
+   
+}
+
+.Projects li {
+    background-color: #da627d;
+    padding: 30px;
+    margin: 50px;
+    
+}
+
+.Projects a {
+text-decoration: none;
+color: #fff;
+}
+
+.Projects a:hover {
+    color: black;
+    transition: ease-in-out .3s;
+}
+
 
 .GitHub h3 {
     font-size: 50px;
@@ -164,5 +204,7 @@ header a {
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow
 
+https://www.city-data.com/city/Fillmore-Utah.html 
 
+https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/ 
 */

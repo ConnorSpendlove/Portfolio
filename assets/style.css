@@ -299,7 +299,7 @@ align-items: center;
     max-height: 200px;
 }
 
-
+/* Contact me header properties */
   .Contact-Me h4 {
     font-size: 50px;
     color: #38230f;
@@ -309,6 +309,7 @@ align-items: center;
     margin: 40px;
  }
 
+ /* Contact me list flex display */
  .Contact-Me ul {
     list-style-type: none;
     color: #38230f;
@@ -319,15 +320,49 @@ align-items: center;
     margin: 40px;
  }
 
- .Contact-Me li {
-    text-decoration: none; 
+/* Sets all three images to max height */
+.Contact-Me img {
+    max-height: 100px;
+}
+
+/* Sets color + margin for text */
+.Contact-Me li a{
+    color: #38230f;
+    margin: 5px;
+ }
+
+ /* Changes text color when hovered over */
+ .Contact-Me li a:hover{
+    color: #fca17d;
+    transition: ease-in-out 0.2s;
  
  }
-     
 
+ /* Sets image on top and centered of text */
+#githubLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+/* rounds edges to match other graphics */
+#githubLogo img {
+    border-radius: 10px;
+}
 
+/* Sets image on top and centered of text */
+#linkedinLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+/* Sets image on top and centered of text */
+#emailLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 
@@ -353,8 +388,8 @@ align-items: center;
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow
 
-https://www.city-data.com/city/Fillmore-Utah.html 
-
 https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/ 
+
+https://www.youtube.com/watch?v=NG3WhmbsFvc
 
 */

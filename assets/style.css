@@ -1,4 +1,4 @@
-/* Copied from Module 1 Css */
+
 * {
     box-sizing:border-box;
     padding: 0;
@@ -9,6 +9,8 @@ body{
     background-color: #f9dbbd;
 }
 
+
+/* Header format, font-family, color, etc. */
 .header {
     padding: 35px;
     background-color: #da627d;
@@ -17,155 +19,235 @@ body{
     justify-content: space-between;
 }
 
+
+/* header text */
 .header h1 {
-font-size: 80px;
+font-size: 70px;
 color: #fff;
 }
 
+/* Changes header size during screen-shrink */
+@media (width <= 992px) {
+    .header h1 {
+       font-size: 50px;
+    }
+}
+
+@media (width <= 550px) {
+    .header h1 {
+       font-size: 40px;
+    }
+}
+
+/* flexes header nav link to the end and bottom of the flex-box */
 .header nav {
-  font-size: 31px;
+  font-size: 25px;
   display: flex;
   justify-content: end;
   align-items: end;
 }
 
-.header ul {
-    list-style-type: none;
+/* Adjusts font size of header nav bar during screen-size change */
+@media (width <= 992px) {
+    .header nav {
+       font-size: 15px;
+    }
 }
 
 .header li {
     display: inline;
-    margin: 20px   
+    margin: 10px   
 }
 
+/* Makes each link in th nav tag change color when hovering over */
 .header a:hover {
 color: white;
 transition: ease-in-out 0.2s;
 }
 
+/* Deletes the default underline that occurs when assigning text as a link */
 header a {
     text-decoration:none;
     color: #f9dbbd;
 }
 
+/* Full-Stack Web Developer header element */
 .Subheader {
     background-color: #fca17d;
     padding: 10px;
 }
 
+/* Full-Stack Web Developer text element */
 .Subheader h2 {
     margin-left: 10px;
-    font-size: 47px;
+    font-size: 35px;
     display: flex;
     justify-content: start;
     color: #fff;
     text-shadow: 1px 2px black;
 }
 
+/* Font family and default settings for all content in content main section */
 .content {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
     color: black;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
+/* Full about me section */
 .About-Me {
     margin-top: 35px;
     margin-left: 10px;
 }
 
-/* .About-Me hr{
-    margin: 4px;
-    border-width: 0;
-    background-color:#fca17d;
-    padding: 3px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 1000px;
-    border-radius: 10px;
-} */
-
+/* Header for about me section */
 .About-Me h3 {
-    font-size: 50px;
+    font-size: 40px;
     color: #38230f;
     text-decoration: underline;
     margin-bottom: 20px;
 }
 
+/* Displays the about me description and picture inline, and with space between */
 .About-Me div {
     display: flex;
     justify-content: space-between;
 }
 
+/* Allows the text in the p tag to wrap when the screen size is */
 .About-Me p{
     flex-wrap: wrap;
-    font-size: 39px;
+    font-size: 28px;
     color: black;
     line-height: 1.3;
     text-indent: 50px;
 }
+
+/* Resizes the text in the about me paragraph as the screen width decreases */
+@media (width <= 992px) {
+    .About-Me p {
+       font-size: 17px;
+    }
+}
+
 .About-Me a {
 color: #da627d;
 }
 
+/* Changes the link to fillmore picture to a new color when hovering over it */
 .About-Me a:hover{
     color: #fca17d;
     transition: ease-in-out 0.3s;
 }
 
 .About-Me img {
-    max-height: 650px;
+    max-height: 500px;
     border: 5px  solid #fca17d;
     padding: 5px;
-    margin-right: 50px;
+    margin-right: 30px;
     background-color: #f9dbbd;
     border-radius: 1000px;
  } 
+/* Resizes the picture of me as the width of the screen gets smaller, also decreases the padding+border size */
+ @media (width <= 992px) {
+    .About-Me img {
+       max-height: 250px;
+       padding: 4px;
+       border: 4px  solid #fca17d;
+    }
+}
 
+@media (width <= 500px) {
+    .About-Me img {
+       max-height: 140px;
+       padding: 2px;
+       border: 2px  solid #fca17d;
+    }
+}
+
+/* Project section colors */
 .Projects {
     background-color: #38230f;
     color: #fff;
     margin-top: 80px;
 }
 
+/* Project header properties: flex-box to the center */
 .Projects h3 {
-    font-size: 100px;
+    font-size: 85px;
     color: #fff;
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
+/* Adjusts project header font size when screen width is smaller*/
+@media (width <= 992px) {
+    .Projects h3 {
+       font-size: 70px;
+    }
+}
+
+/* Prework study guide flexs to the center */
 .Projects div {
    display: flex; 
    justify-content: center;
-   font-size: 50px;
+   font-size: 49px;
    margin-top: 50px;
    
 }
 
-.Projects div p {
-padding: 0px;
-margin-left: 57px;
+/* Shrinks font-size of prework study guide element during screen width decrease */
+@media (width <= 992px) {
+    .Projects div {
+       font-size: 30px;
+    }
+}
+@media (width <= 440px) {
+    .Projects div{
+        font-size: 25px;
+    }
+
 }
 
+/* Flexes the preowrk study guide div image and text to align properly*/
 .Projects div a {
 background-color: #da627d;
 text-decoration: none;
 color: #fff;
-padding: 30px;
+padding: 25px;
+border: solid #f9dbbd 5px;
+display: flex;
 justify-content: center;
-/* border-radius: 75px; */
+flex-direction: column-reverse;
+align-items: center;
 }
 
+/* Changes the border of the prework study guide element when it is hovered over */
+.Projects div a:hover {
+    border: solid black 5px;
+    transition: ease-in-out 0.3s;
+}
+
+/* default size of prework study guide image */
 .Projects div a img {
-    max-height: 300px;
-    /* border-radius: 60px; */
+    max-height: 240px;
     
 }
 
+/* changes prework study guide image size when website width is decreased*/
+@media (width <= 992px) {
+    .Projects div a img {
+       max-height: 180px;
+    }
+}
+
+@media (width <= 500px) {
+    .Projects div a img {
+       max-height: 150px;
+    }
+}
+
+/* 3 filler projects that wrap and are displayed with flex-box */
 .Projects ul {
     display: flex;
     justify-content: space-around;
@@ -176,26 +258,35 @@ justify-content: center;
     font-size: 40px; 
 }
 
+/* filler project style */
 .Projects ul li {
     background-color: #da627d;
-    padding: 40px;
-    margin: 60px;   
+    padding: 25px;
+    border: solid #f9dbbd 5px;
+    margin: 40px;   
 }
 
+/* filler project image and text flex-box alignment  */
 .Projects ul li a {
 text-decoration: none;
 color: #fff;
+display: flex;
+flex-direction: column-reverse;
+align-items: center;
 }
 
-.Projects ul li p {
-margin-left: 12px;
-}
-
+/* Changes project text color when hovered over */
 .Projects a:hover {
     color: black;
+}
+
+/* Changes project border when hovered over */
+.Projects ul li:hover {
+    border: solid black 5px;
     transition: ease-in-out .3s;
 }
 
+/* Default image size */
 #Project-1 img{
     max-height: 200px;
 }
@@ -209,12 +300,13 @@ margin-left: 12px;
 }
 
 
- .Contact-Me h4 {
+  .Contact-Me h4 {
     font-size: 50px;
     color: #38230f;
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    margin: 40px;
  }
 
  .Contact-Me ul {
@@ -224,13 +316,14 @@ margin-left: 12px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin: 40px;
  }
 
  .Contact-Me li {
-    text-decoration: none;
-
+    text-decoration: none; 
+ 
  }
-    
+     
 
 
 

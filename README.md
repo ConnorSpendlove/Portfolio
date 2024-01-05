@@ -18,7 +18,7 @@ To use this webpage click the nav bar links to be directed to one of the three s
 
 
 ## Credits
-Lines 1-6 of style.css was recycled from the Module 1 Challenge.
+Lines 1-6 of style.css were recycled from the Module 1 Challenge.
 
 ## License
 Please refer to the LICENSE in the repository.
